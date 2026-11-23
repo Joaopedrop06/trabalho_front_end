@@ -1,253 +1,430 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semana academica SI/ADS</title>
+    <title>Semana Acadêmica SI + ADS 2026</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-   
-<header>
     <!-- CABEÇALHO -->
-    <div class="cabecalho">
-        <h1>SEMANA ACADÊMICA</h1>
-        <h2>SI + ADS 2026</h2>
-        <p>Uma semana para aprender, criar e conectar a tecnologia com as pessoas!</p>
+    <header class="cabecalho">
 
-        <!-- MENU HAMBÚRGUER -->
-        <button id="botao-menu" aria-label="Abrir menu">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo da Semana Acadêmica">
+        </div>
+
+        <div class="informacoes-logo">
+            <h1>SEMANA ACADÊMICA</h1>
+            <p>SI + ADS • 2026</p>
+        </div>
+
+        <button type="button" id="botao-menu" aria-label="Abrir menu">
             <span></span>
             <span></span>
             <span></span>
         </button>
-    </div>
 
-    <!-- LOGO -->
-    <div class="logo">
-        <img src="img/logo.png" alt="Logo da Semana Acadêmica SI/ADS">
-    </div>
-</header>
+        <nav id="menu-principal">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#programacao">Programação</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#inscricao">Inscrição</a>
+        </nav>
 
-<!--CORPO PRINCIPAL-->
-<main>
-
-    <section>
-        <button id="Botao_vaga">Garantir a minha vaga</button>
-    </section>
-
-    <section>
-        <img src="img/alunos.png" alt="Alunos reunidos projetando algo com auxilio do seu professor">
-        <p>POR QUE PARTICIPAR?</p>
-        <h2>Ideias, pessoas e tecnologia no mesmo lugar.</h2>
-        <p>A Semana Acadêmica reúne estudantes, professores e profissionais para palestras, oficinas, networking e uma troca de experiências que vai além da sala de aula.</p>
-    
-
-    <div class="indicadores">
-
-        <div class="cartao_indicador">
-            <h3>5 dias</h3>
-            <p>imersivos</p>
-        </div>
-
-        <div class="cartao_indicador">
-            <h3>12+</h3>
-            <p>Atividades</p>
-        </div>
-
-        <div class="cartao_indicador">
-            <h3>100%</h3>
-            <p>conexão</p>
-        </div>
-
-    </div>
-
-    </section>
+    </header>
 
 
-    <section>
-        <h3>Programação em destaque</h3>
-        <p>Escolha onde quer chegar.</p>
+    <main>
 
-            <div class="programacao">
+        <!-- 1. SEÇÃO INICIAL / HERO -->
+        <section class="inicio" id="inicio">
 
-        <div class="links">
-            
-            <a href="programacao.html">
-                <div class="cartao_programacao">
-                    <h3>SEG 19H PALESTRA</h3>
-                    <p>IA aplicada: do hype à prática</p>
+            <div class="imagem-inicio">
+
+                <img src="img/alunos.png"
+                     alt="Quatro estudantes caminhando pelo campus da faculdade">
+
+                <div class="data-evento">
+                    <p>18—22 MAI • CAMPUS CENTRAL</p>
                 </div>
-            </a>
 
-            <a href="programacao.html">
-                <div class="cartao_programacao">
-                    <h3>QUA 14H OFICINA</h3>
-                    <p>Prototipando produtos digitais</p>
+            </div>
+
+            <div class="conteudo-inicio">
+
+                <h2>Conexões que viram futuro.</h2>
+
+                <p>
+                    Uma semana para aprender, criar e conectar
+                    tecnologia com pessoas.
+                </p>
+
+                <a href="#inscricao" class="botao-vaga">
+                    GARANTIR MINHA VAGA ↗
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- 2. SEÇÃO SOBRE O EVENTO -->
+        <section class="sobre" id="sobre">
+
+            <div class="imagem-sobre">
+
+                <img src="img/laboratorio.png"
+                     alt="Estudantes reunidos desenvolvendo atividades de tecnologia">
+
+            </div>
+
+            <div class="conteudo-sobre">
+
+                <p class="subtitulo">POR QUE PARTICIPAR?</p>
+
+                <h2>Ideias, pessoas e tecnologia no mesmo lugar.</h2>
+
+                <p>
+                    A Semana Acadêmica reúne estudantes, professores
+                    e profissionais para palestras, oficinas,
+                    networking e uma troca de experiências que vai
+                    além da sala de aula.
+                </p>
+
+            </div>
+
+            <!-- INDICADORES -->
+            <div class="indicadores">
+
+                <div class="cartao-indicador">
+                    <h3>5 dias</h3>
+                    <p>imersivos</p>
                 </div>
-            </a>
 
-            <a href="programacao.html">
-                <div class="cartao_programacao">
-                    <h3>SEX 18H PAINEL</h3>
-                    <p>Oportunidade de conhecer pessoas, trocar ideias e expandir sua rede de contatos no setor de TI.</p>
+                <div class="cartao-indicador">
+                    <h3>12+</h3>
+                    <p>atividades</p>
                 </div>
-            </a>
+
+                <div class="cartao-indicador">
+                    <h3>100%</h3>
+                    <p>conexão</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 3. SEÇÃO PROGRAMAÇÃO -->
+        <section class="programacao" id="programacao">
+
+            <p class="subtitulo">PROGRAMAÇÃO EM DESTAQUE</p>
+
+            <h2>Escolha onde quer chegar.</h2>
+
+            <div class="lista-programacao">
+
+                <a href="programacao.html" class="cartao-programacao">
+
+                    <div class="icone-programacao icone-verde">
+                        <span>PA</span>
+                    </div>
+
+                    <div class="informacoes-programacao">
+                        <h3>SEG • 19H • PALESTRA</h3>
+                        <p>IA aplicada: do hype à prática</p>
+                    </div>
+
+                    <span class="seta">↗</span>
+
+                </a>
+
+
+                <a href="programacao.html" class="cartao-programacao">
+
+                    <div class="icone-programacao icone-azul">
+                        <span>OF</span>
+                    </div>
+
+                    <div class="informacoes-programacao">
+                        <h3>QUA • 14H • OFICINA</h3>
+                        <p>Prototipando produtos digitais</p>
+                    </div>
+
+                    <span class="seta">↗</span>
+
+                </a>
+
+
+                <a href="programacao.html" class="cartao-programacao">
+
+                    <div class="icone-programacao icone-vermelho">
+                        <span>PA</span>
+                    </div>
+
+                    <div class="informacoes-programacao">
+                        <h3>SEX • 18H • PAINEL</h3>
+                        <p>Carreiras em tecnologia</p>
+                    </div>
+
+                    <span class="seta">↗</span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- 4. SEÇÃO GALERIA -->
+        <section class="galeria" id="galeria">
+
+            <h2>Já vivemos muita coisa juntos.</h2>
+
+            <!-- IMAGEM PRINCIPAL -->
+            <div class="imagem-principal-galeria">
+
+                <img src="img/palestra.png"
+                     alt="Público acompanhando uma palestra em um auditório">
+
+            </div>
+
+            <!-- DUAS IMAGENS MENORES -->
+            <div class="imagens-secundarias">
+
+                <div class="imagem-secundaria">
+
+                    <img src="img/palestra_aula.png"
+                         alt="Estudantes participando de uma atividade em grupo">
+
+                </div>
+
+                <div class="imagem-secundaria">
+
+                    <!-- Adicione aqui a quinta foto do protótipo -->
+                    <img src="img/foto-networking.png"
+                         alt="Estudantes e profissionais conversando durante o evento">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 5. SEÇÃO INSCRIÇÃO -->
+        <section class="inscricao" id="inscricao">
+
+            <div class="numero-inscricao">
+                <span>01</span>
+            </div>
+
+            <h2>Sua próxima conexão começa aqui.</h2>
+
+            <p class="descricao-inscricao">
+                Preencha seus dados e escolha as experiências
+                que mais combinam com você.
+            </p>
+
+            <form action="#" method="post">
+
+                <label for="nome">Nome completo</label>
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Como você quer ser chamado(a)?"
+                    required
+                >
+
+
+                <label for="email">E-mail</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="voce@exemplo.com"
+                    required
+                >
+
+
+                <label for="telefone">Telefone</label>
+                <input
+                    type="tel"
+                    id="telefone"
+                    name="telefone"
+                    placeholder="(00) 00000-0000"
+                >
+
+
+                <div class="campos-curso">
+
+                    <div>
+                        <label for="curso">Curso</label>
+
+                        <select id="curso" name="curso" required>
+                            <option value="">SI ou ADS</option>
+                            <option value="SI">Sistemas de Informação</option>
+                            <option value="ADS">Análise e Desenvolvimento de Sistemas</option>
+                        </select>
+                    </div>
+
+
+                    <div>
+                        <label for="periodo">Período / semestre</label>
+
+                        <select id="periodo" name="periodo" required>
+                            <option value="">Selecione</option>
+                            <option value="1">1º período</option>
+                            <option value="2">2º período</option>
+                            <option value="3">3º período</option>
+                            <option value="4">4º período</option>
+                            <option value="5">5º período</option>
+                            <option value="6">6º período</option>
+                        </select>
+                    </div>
+
+                </div>
+
+
+                <fieldset>
+
+                    <legend>Atividades de interesse</legend>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="interesses"
+                            value="palestras"
+                            checked
+                        >
+                        Palestras
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="interesses"
+                            value="oficinas"
+                        >
+                        Oficinas práticas
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="interesses"
+                            value="paineis"
+                        >
+                        Painéis e networking
+                    </label>
+
+                </fieldset>
+
+
+                <button type="submit" class="botao-inscricao">
+                    Quero me inscrever →
+                </button>
+
+                <small>
+                    Ao enviar, você concorda com o uso dos dados
+                    exclusivamente para comunicações do evento.
+                </small>
+
+            </form>
+
+        </section>
+
+
+        <!-- 6. INFORMAÇÕES DO EVENTO -->
+        <section class="informacoes-evento">
+
+            <h2>Antes de chegar, anota aí.</h2>
+
+
+            <div class="informacao">
+
+                <div class="icone-informacao">⌖</div>
+
+                <div>
+                    <h3>ONDE</h3>
+                    <p>Auditório Central • Bloco B</p>
+                </div>
+
+            </div>
+
+
+            <div class="informacao">
+
+                <div class="icone-informacao">◷</div>
+
+                <div>
+                    <h3>QUANDO</h3>
+                    <p>18 a 22 de maio • a partir das 14h</p>
+                </div>
+
+            </div>
+
+
+            <div class="informacao">
+
+                <div class="icone-informacao">●</div>
+
+                <div>
+                    <h3>VALOR</h3>
+                    <p>Gratuito • vagas limitadas</p>
+                </div>
+
+            </div>
+
+
+            <div class="contato">
+
+                <p>Ficou com alguma dúvida?</p>
+
+                <a href="mailto:semanaacademica@faculdade.edu.br">
+                    semanaacademica@faculdade.edu.br
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- 7. RODAPÉ -->
+    <footer class="rodape">
+
+        <div class="identidade-rodape">
+
+            <img src="img/logo.png" alt="Logo da Semana Acadêmica">
+
+            <h2>SEMANA ACADÊMICA</h2>
+
+            <div class="redes-sociais">
+                <a href="#" aria-label="Instagram">IG</a>
+                <span>•</span>
+                <a href="#" aria-label="LinkedIn">LI</a>
+            </div>
+
         </div>
 
-    </div>
-    </section>
+        <small>
+            © 2026 Semana Acadêmica SI + ADS.
+            Feito por quem acredita no poder da tecnologia e da educação.
+        </small>
 
-    <h2>Já vivemos muita coisa juntos.</h2>
-    
-
-
-    <section>
-        <img src="img/palestra.png" alt="Varios alunos e visitantes assistindo a uma palestra de um profissional de ti">
-    </section>
-
-    <div class="demostracao">
-
-        <div class="imagem-demostracao">
-            <img src="img/palestra_aula.png" alt="alunos tendo uma palestra dentro da sala de aula">
-        </div>
-
-         <div class="imagem-demostracao">
-            <img src="img/laboratorio.png" alt="alunos tendo uma atividade pratica de programação e rebotica em um laboratorio">
-        </div>
-
-    </div>
-
-
-<!-- QUINTA SEÇÃO: INSCRIÇÃO -->
-<section class="inscricao">
-
-    <p>FAÇA PARTE DESSA EXPERIÊNCIA</p>
-
-    <h2>Garanta sua vaga!</h2>
-
-    <p>Preencha seus dados e venha participar da Semana Acadêmica.</p>
-
-    <form>
-
-        <!-- NOME -->
-        <label for="nome">Nome completo</label>
-        <input type="text" id="nome" name="nome"
-               placeholder="Digite seu nome" required>
-
-        <!-- EMAIL -->
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="email"
-               placeholder="Digite seu e-mail" required>
-
-        <!-- TELEFONE -->
-        <label for="telefone">Telefone</label>
-        <input type="tel" id="telefone" name="telefone"
-               placeholder="(00) 00000-0000">
-
-        <!-- CURSO -->
-        <label for="curso">Curso</label>
-        <select id="curso" name="curso" required>
-            <option value="">Selecione seu curso</option>
-            <option value="SI">Sistemas de Informação</option>
-            <option value="ADS">Análise e Desenvolvimento de Sistemas</option>
-        </select>
-
-        <!-- PERÍODO -->
-        <label for="periodo">Período</label>
-        <select id="periodo" name="periodo">
-            <option value="">Selecione seu período</option>
-            <option value="1">1º período</option>
-            <option value="2">2º período</option>
-            <option value="3">3º período</option>
-            <option value="4">4º período</option>
-            <option value="5">5º período</option>
-            <option value="6">6º período</option>
-        </select>
-
-        <!-- INTERESSES -->
-        <fieldset>
-            <legend>Quais atividades despertam seu interesse?</legend>
-
-            <label>
-                <input type="checkbox" name="interesses" value="palestras">
-                Palestras
-            </label>
-
-            <label>
-                <input type="checkbox" name="interesses" value="oficinas">
-                Oficinas
-            </label>
-
-            <label>
-                <input type="checkbox" name="interesses" value="networking">
-                Networking
-            </label>
-        </fieldset>
-
-        <button type="submit">Enviar inscrição</button>
-
-    </form>
-
-</section>
-
-
-<!-- SEXTA SEÇÃO: INFORMAÇÕES DO EVENTO -->
-<section class="informacoes-evento">
-
-    <h2>Informações do evento</h2>
-
-    <!-- LOCAL -->
-    <div class="informacao">
-        <h3>Localização</h3>
-        <p>Preencha aqui o endereço do evento.</p>
-    </div>
-
-    <!-- DATA E HORÁRIO -->
-    <div class="informacao">
-        <h3>Data e horário</h3>
-        <p>Preencha aqui os dias e horários do evento.</p>
-    </div>
-
-    <!-- CUSTO -->
-    <div class="informacao">
-        <h3>Investimento</h3>
-        <p>Preencha aqui o valor ou informe se a participação é gratuita.</p>
-    </div>
-
-    <!-- CONTATO -->
-    <div class="informacao">
-        <h3>Contato</h3>
-        <p>Preencha aqui o e-mail oficial do evento.</p>
-    </div>
-
-</section>
-
-<!-- RODAPÉ -->
-<footer class="rodape">
-
-    <div class="logo-rodape">
-        <img src="img/logo.png" alt="Logo da Semana Acadêmica">
-    </div>
-
-    <p>Semana Acadêmica SI + ADS • 2026</p>
-
-    <p>Conectando pessoas, ideias e tecnologia.</p>
-
-    <div class="redes-sociais">
-        <!-- Coloque aqui os links das redes sociais, se houver -->
-    </div>
-
-    <small>
-        © 2026 Semana Acadêmica. Todos os direitos reservados.
-    </small>
-
-</footer>
-
-
-
-
-</main>
+    </footer>
 
 </body>
+
 </html>
