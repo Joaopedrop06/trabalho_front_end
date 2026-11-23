@@ -1,0 +1,733 @@
+/* =========================================
+   1. CONFIGURAÇÕES GERAIS
+   ========================================= */
+
+/* Remove margens e espaçamentos padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configura o comportamento geral da página */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilização principal do corpo */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f0;
+    color: #172522;
+    line-height: 1.6;
+}
+
+/* Remove a decoração padrão dos links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Faz as imagens respeitarem o tamanho dos elementos */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Configuração dos títulos */
+h1, h2, h3 {
+    line-height: 1.2;
+}
+
+/* =========================================
+   2. CABEÇALHO
+   ========================================= */
+
+.cabecalho {
+    width: 100%;
+    min-height: 90px;
+    padding: 18px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #f5f5f0;
+    position: relative;
+    z-index: 10;
+}
+
+/* Área da imagem da logo */
+.logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+/* Informações ao lado da logo */
+.informacoes-logo {
+    margin-right: auto;
+}
+
+.informacoes-logo h1 {
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #173b32;
+}
+
+.informacoes-logo p {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #68766e;
+}
+
+/* =========================================
+   3. MENU DE NAVEGAÇÃO
+   ========================================= */
+
+#menu-principal {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#menu-principal a {
+    font-size: 13px;
+    font-weight: 600;
+    color: #263b34;
+    transition: color 0.3s ease;
+}
+
+#menu-principal a:hover {
+    color: #70a889;
+}
+
+/* Botão do menu mobile */
+#botao-menu {
+    display: none;
+    width: 42px;
+    height: 42px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Linhas do botão */
+#botao-menu span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px auto;
+    background-color: #173b32;
+}
+
+/* =========================================
+   4. SEÇÃO INICIAL / HERO
+   ========================================= */
+
+.inicio {
+    min-height: 580px;
+    padding: 55px 7%;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 65px;
+    background-color: #173b32;
+    color: #ffffff;
+}
+
+/* Imagem principal */
+.imagem-inicio {
+    height: 440px;
+    position: relative;
+}
+
+.imagem-inicio img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Data sobre a imagem */
+.data-evento {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 12px 18px;
+    background-color: #d8e5d9;
+    color: #173b32;
+    border-radius: 3px;
+}
+
+.data-evento p {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* Conteúdo textual do hero */
+.conteudo-inicio {
+    max-width: 480px;
+}
+
+.conteudo-inicio h2 {
+    max-width: 450px;
+    margin-bottom: 25px;
+    font-size: clamp(38px, 5vw, 65px);
+    font-weight: 700;
+    line-height: 1.05;
+}
+
+.conteudo-inicio p {
+    max-width: 390px;
+    margin-bottom: 35px;
+    color: #d0ddd5;
+    font-size: 16px;
+}
+
+/* Botão de inscrição do hero */
+.botao-vaga {
+    display: inline-block;
+    padding: 16px 25px;
+    background-color: #a7c9ae;
+    color: #173b32;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.botao-vaga:hover {
+    background-color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* =========================================
+   5. SEÇÃO SOBRE
+   ========================================= */
+
+.sobre {
+    padding: 110px 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 45px;
+    background-color: #f5f5f0;
+}
+
+/* Imagem da seção sobre */
+.imagem-sobre {
+    height: 390px;
+}
+
+.imagem-sobre img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Texto da seção sobre */
+.conteudo-sobre {
+    max-width: 500px;
+}
+
+.subtitulo {
+    margin-bottom: 18px;
+    color: #668b72;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.conteudo-sobre h2 {
+    margin-bottom: 22px;
+    color: #173b32;
+    font-size: clamp(30px, 4vw, 45px);
+    line-height: 1.15;
+}
+
+.conteudo-sobre > p:last-child {
+    color: #69736d;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+/* Indicadores numéricos */
+.indicadores {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.cartao-indicador {
+    padding: 25px 15px;
+    border-top: 1px solid #bdc9bd;
+}
+
+.cartao-indicador h3 {
+    margin-bottom: 5px;
+    color: #173b32;
+    font-size: 32px;
+}
+
+.cartao-indicador p {
+    color: #748078;
+    font-size: 13px;
+}
+
+/* =========================================
+   6. SEÇÃO PROGRAMAÇÃO
+   ========================================= */
+
+.programacao {
+    padding: 100px 10%;
+    background-color: #e9eee8;
+}
+
+.programacao > h2 {
+    margin-bottom: 45px;
+    color: #173b32;
+    font-size: clamp(30px, 4vw, 45px);
+}
+
+/* Lista de atividades */
+.lista-programacao {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cartões individuais */
+.cartao-programacao {
+    min-height: 115px;
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    border-top: 1px solid #c5d0c5;
+    transition: background-color 0.3s ease;
+}
+
+.cartao-programacao:last-child {
+    border-bottom: 1px solid #c5d0c5;
+}
+
+.cartao-programacao:hover {
+    background-color: #dce7dc;
+}
+
+/* Ícones das atividades */
+.icone-programacao {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.icone-verde {
+    background-color: #c8ddc6;
+    color: #315d3b;
+}
+
+.icone-azul {
+    background-color: #cbdde6;
+    color: #315a70;
+}
+
+.icone-vermelho {
+    background-color: #e9d1c9;
+    color: #875044;
+}
+
+/* Informações dos cartões */
+.informacoes-programacao {
+    flex: 1;
+}
+
+.informacoes-programacao h3 {
+    margin-bottom: 8px;
+    color: #758278;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+
+.informacoes-programacao p {
+    color: #173b32;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+/* Seta dos cartões */
+.seta {
+    color: #557b60;
+    font-size: 25px;
+}
+
+/* =========================================
+   7. SEÇÃO GALERIA
+   ========================================= */
+
+.galeria {
+    padding: 100px 10%;
+    background-color: #f5f5f0;
+}
+
+.galeria h2 {
+    margin-bottom: 40px;
+    color: #173b32;
+    font-size: clamp(30px, 4vw, 45px);
+}
+
+/* Imagem principal da galeria */
+.imagem-principal-galeria {
+    width: 100%;
+    height: 420px;
+    margin-bottom: 18px;
+    overflow: hidden;
+}
+
+.imagem-principal-galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.imagem-principal-galeria:hover img,
+.imagem-secundaria:hover img {
+    transform: scale(1.04);
+}
+
+/* Duas imagens menores */
+.imagens-secundarias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.imagem-secundaria {
+    height: 230px;
+    overflow: hidden;
+}
+
+.imagem-secundaria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* =========================================
+   10. RODAPÉ
+   ========================================= */
+
+.rodape {
+    padding: 55px 10% 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background-color: #102c25;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Identidade visual do rodapé */
+.identidade-rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.identidade-rodape img {
+    width: 65px;
+    height: 65px;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+.identidade-rodape h2 {
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+/* Redes sociais */
+.redes-sociais {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #a7c9ae;
+    font-size: 13px;
+}
+
+.redes-sociais a:hover {
+    color: #ffffff;
+}
+
+/* Texto de direitos autorais */
+.rodape > small {
+    max-width: 550px;
+    color: #aebdb3;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+/* =========================================
+   11. RESPONSIVIDADE
+   ========================================= */
+
+/* Tablets e telas menores */
+@media (max-width: 900px) {
+
+    .cabecalho {
+        padding: 15px 5%;
+    }
+
+    #menu-principal {
+        gap: 16px;
+    }
+
+    #menu-principal a {
+        font-size: 12px;
+    }
+
+    .inicio {
+        padding: 50px 5%;
+        gap: 35px;
+    }
+
+    .sobre,
+    .programacao,
+    .galeria,
+    .inscricao,
+    .informacoes-evento {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    .imagem-inicio {
+        height: 370px;
+    }
+
+    .imagem-sobre {
+        height: 330px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 650px) {
+
+    /* Cabeçalho */
+    .cabecalho {
+        min-height: 75px;
+        padding: 12px 5%;
+        gap: 12px;
+    }
+
+    .logo img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .informacoes-logo h1 {
+        font-size: 13px;
+    }
+
+    .informacoes-logo p {
+        font-size: 10px;
+    }
+
+    /* Exibe o botão do menu */
+    #botao-menu {
+        display: block;
+        flex-shrink: 0;
+    }
+
+    /* Menu fechado por padrão */
+    #menu-principal {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 20px 5%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+        background-color: #f5f5f0;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    /* Classe que o JavaScript deve adicionar para abrir o menu */
+    #menu-principal.ativo {
+        display: flex;
+    }
+
+    #menu-principal a {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    /* Hero */
+    .inicio {
+        min-height: auto;
+        padding: 35px 6% 55px;
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .imagem-inicio {
+        height: 300px;
+    }
+
+    .conteudo-inicio {
+        max-width: 100%;
+    }
+
+    .conteudo-inicio h2 {
+        font-size: 43px;
+    }
+
+    /* Sobre */
+    .sobre {
+        padding: 65px 6%;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .imagem-sobre {
+        height: 280px;
+    }
+
+    .conteudo-sobre h2 {
+        font-size: 34px;
+    }
+
+    .indicadores {
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .cartao-indicador {
+        padding: 18px 5px;
+    }
+
+    .cartao-indicador h3 {
+        font-size: 25px;
+    }
+
+    .cartao-indicador p {
+        font-size: 11px;
+    }
+
+    /* Programação */
+    .programacao {
+        padding: 65px 6%;
+    }
+
+    .cartao-programacao {
+        gap: 13px;
+        padding: 18px 5px;
+    }
+
+    .icone-programacao {
+        width: 45px;
+        height: 45px;
+        font-size: 11px;
+    }
+
+    .informacoes-programacao h3 {
+        font-size: 9px;
+    }
+
+    .informacoes-programacao p {
+        font-size: 14px;
+    }
+
+    .seta {
+        font-size: 20px;
+    }
+
+    /* Galeria */
+    .galeria {
+        padding: 65px 6%;
+    }
+
+    .imagem-principal-galeria {
+        height: 260px;
+    }
+
+    .imagens-secundarias {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .imagem-secundaria {
+        height: 220px;
+    }
+
+    /* Inscrição */
+    .inscricao {
+        padding: 65px 6%;
+    }
+
+    .campos-curso {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    /* Informações */
+    .informacoes-evento {
+        padding: 65px 6%;
+    }
+
+    .informacao p {
+        font-size: 13px;
+    }
+
+    .contato a {
+        font-size: 13px;
+    }
+
+    /* Rodapé */
+    .rodape {
+        padding: 45px 6% 25px;
+    }
+}
+
+/* Celulares muito estreitos */
+@media (max-width: 380px) {
+
+    .informacoes-logo h1 {
+        font-size: 11px;
+    }
+
+    .conteudo-inicio h2 {
+        font-size: 36px;
+    }
+
+    .indicadores {
+        grid-template-columns: 1fr;
+    }
+
+    .cartao-indicador {
+        text-align: center;
+    }
+
+    .cartao-programacao {
+        gap: 9px;
+    }
+
+    .informacoes-programacao p {
+        font-size: 12px;
+    }
+}
