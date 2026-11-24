@@ -80,11 +80,96 @@ Nesse prompt, pedi que ela revisasse e corrigisse meu código, apontasse os erro
 
 **Prompt utilizado:**
 
-> [Cole aqui o prompt utilizado.]
+# Estilização CSS baseada no protótipo do Figma
+
+Com base no protótipo desenvolvido no Figma, realize a estilização completa da página utilizando CSS, buscando reproduzir o mais fielmente possível o design apresentado.
+
+## 1. Fidelidade ao protótipo
+
+- Analise cuidadosamente o protótipo do Figma antes de começar a implementação.
+- Reproduza com a maior fidelidade possível o layout, as cores, as fontes, os tamanhos, os espaçamentos, os alinhamentos, as imagens, os botões e os demais elementos visuais.
+- Respeite a identidade visual e a organização dos elementos apresentados no Figma.
+- Não invente elementos ou altere o design original sem necessidade.
+- Caso algum detalhe do protótipo não esteja claro, explique a dúvida antes de tomar decisões que possam comprometer a fidelidade visual.
+
+## 2. Responsividade
+
+O site deverá ser totalmente responsivo e apresentar uma boa experiência de navegação nos seguintes dispositivos:
+
+- **Desktop:** computadores e notebooks.
+- **Android:** smartphones e tablets.
+- **iOS:** iPhones e iPads.
+
+Utilize boas práticas de CSS responsivo, como:
+- Media Queries (`@media`).
+- Flexbox e CSS Grid, quando apropriado.
+- Unidades flexíveis (`%`, `rem`, `vw`, `vh`).
+- Imagens adaptáveis.
+- Ajustes de espaçamento, tamanho de fontes e organização dos elementos conforme a tela.
+
+A página não deve apresentar elementos cortados, sobrepostos, desalinhados ou barras de rolagem horizontais indesejadas.
+
+## 3. Organização e qualidade do código
+
+- Mantenha o código limpo, organizado e fácil de entender.
+- Utilize nomes de classes claros e padronizados.
+- Organize o CSS por seções, seguindo a estrutura dos elementos da página.
+- Evite repetições desnecessárias e regras conflitantes.
+- Utilize comentários para identificar as principais seções e explicar regras importantes.
+- Preserve a estrutura HTML existente sempre que possível, realizando alterações somente quando forem realmente necessárias para alcançar o resultado do Figma.
+- Não remova elementos ou funcionalidades já existentes sem justificar a necessidade.
+
+## 4. Comentários e identificação das alterações
+
+Toda alteração realizada deverá ser identificada e explicada por meio de comentários.
+
+- Comente as novas regras e os principais blocos de CSS.
+- Explique a finalidade das alterações feitas no HTML, caso sejam necessárias.
+- Identifique claramente as novas implementações e os ajustes realizados.
+- Informe quais partes do código foram modificadas e por quê.
+- Mantenha os comentários objetivos, evitando comentários excessivos que dificultem a leitura.
+
+O objetivo é permitir que outra pessoa consiga entender o código, localizar as alterações e realizar futuras modificações com facilidade.
+
+## 5. Testes e validação
+
+Após finalizar a implementação:
+
+- Verifique se a página está visualmente próxima do protótipo do Figma.
+- Teste o funcionamento em diferentes tamanhos de tela.
+- Verifique a responsividade em dispositivos desktop, Android e iOS.
+- Corrija problemas de alinhamento, espaçamento, dimensionamento e posicionamento.
+- Confira se imagens, fontes, botões, links e demais elementos continuam funcionando.
+- Não considere o trabalho concluído antes de verificar os principais pontos da página.
+
+## 6. Documentação final
+
+Ao concluir o desenvolvimento, gere um documento explicativo em formato Word (`.docx`) contendo:
+
+1. **Visão geral:** o que foi desenvolvido e qual era o objetivo da estilização.
+2. **Estrutura da página:** explicação dos principais elementos HTML.
+3. **Estilização CSS:** explicação das propriedades, seletores e técnicas utilizadas.
+4. **Responsividade:** explicação de como o site se adapta a desktop, Android e iOS.
+5. **Alterações realizadas:** descrição do que foi modificado, adicionado ou ajustado.
+6. **Organização dos arquivos:** explicação da função de cada arquivo do projeto.
+7. **Como fazer alterações futuras:** orientação de onde modificar cores, fontes, imagens, espaçamentos, tamanhos e outros elementos.
+
+Explique cada parte com linguagem clara e didática, considerando que o material também será utilizado para estudo.
+
+## 7. Entrega final
+
+Ao terminar, disponibilize:
+
+- Os arquivos do projeto atualizados.
+- O CSS completo, organizado e comentado.
+- O HTML atualizado, caso tenha sido necessário modificá-lo.
+- O documento Word (`.docx`) explicando o desenvolvimento e as alterações realizadas.
+
+**Importante:** não substitua todo o código existente sem necessidade. Trabalhe a partir da estrutura atual do projeto, preserve o que já funciona e faça alterações incrementais. Priorize a fidelidade ao Figma, a responsividade, a organização e a facilidade de manutenção do código.
 
 **Resultado obtido:**
 
-[Explique o resultado.]
+Após esse prompt a IA me deu a estilização completa, trazendo uma estilização semelhante ao prototipo do Figma, além de fazer toda a parte responsiva do site, garantindo que ele funcione corretamente em dispositivos diferentes mantendo o UX e UI
 
 ---
 
